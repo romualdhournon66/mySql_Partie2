@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="MySql Partie 2">
+        <meta name="author" content="Leveque Matthieu">
+        <title>MySql Partie 2</title>
+        <!-- main core CSS -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 bgMatt">
+                    <h1>MySql Partie 2</h1>
+                    <p><strong>Consigne</strong>:</p>
+                    <ul>
+                        <li>Exercice 1: Dans la base de données webDevelopment, créer la table languages avec les colonnes : id (type INT, auto-incrémenté, clé primaire)/language (type VARCHAR)</li>
+                        <li>Exercice 2: Dans la base de données webDevelopment, créer la table tools avec les colonnes suivantes : id (type INT, auto-incrémenté, clé primaire)/tool (type VARCHAR)</li>
+                        <li>Exercice 3: Dans la base de données webDevelopment, créer la table frameworks avec les colonnes suivantes : id (type INT, auto-incrémenté, clé primaire)/name (type VARCHAR)</li>
+                        <li>Exercice 4: Dans la base de données webDevelopment, créer la table librairies avec les colonnes suivantes : id (type INT, auto-incrémenté, clé primaire)/librairy (type VARCHAR)</li>
+                        <li>Exercice 5: Dans la base de données webDevelopment, créer la table ide avec les colonnes suivantes : id (type INT, auto-incrémenté, clé primaire)/ideName (type VARCHAR)</li>
+                        <li>Exercice 6: Dans la base de données webDevelopment, créer, si elle n'existe pas, la table frameworks avec les colonnes suivantes : id (type INT, auto-incrémenté, clé primaire)/name (type VARCHAR)</li>
+                        <li>Exercice 7: Supprimer la table tools si elle existe.</li>
+                        <li>Exercice 8: Supprimer la table librairies.</li>
+                        <li>Exercice 9: Supprimer la table ide.</li>
+                        <li>TP:</li>
+                        <img src="assets/img/tp.png" width="800px" />
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">      
+                <div class="col-md-12 bgMatt">
+                    <h1>Résultat:</h1>
+                    <p>Exercice 1:</p>
+                    <ul>
+                        <li>mysql> USE webDevelopment</li>
+                        <li>Database changed</li>
+                        <li>mysql> CREATE TABLE [IF NOT EXISTS] languages (</li>
+                        <li>-> id INT AUTO_INCREMENT [PRIMARY KEY],</li>
+                        <li>-> language VARCHAR(30) NOT NULL);</li>
+                    </ul>
+                    <p>Exercice 2:</p>
+                    <ul>
+                        <li>mysql> CREATE TABLE [IF NOT EXISTS] tools (</li>
+                        <li>-> id INT AUTO_INCREMENT [PRIMARY KEY],</li>
+                        <li>-> tool VARCHAR(30));</li>
+                    </ul>
+                    <p>Exercice 3:</p>
+                    <ul>
+                        <li>mysql> CREATE TABLE [IF NOT EXISTS] frameworks (</li>
+                        <li>-> id INT AUTO_INCREMENT [PRIMARY KEY];</li>
+                        <li>-> name VARCHAR(30));</li>
+                    </ul>
+                    <p>Exercice 4:</p>
+                    <ul>
+                        <li>mysql> CREATE TABLE [IF NOT EXISTS] librairies (</li>
+                        <li>-> id INT AUTO_INCREMENT [PRIMARY KEY],</li>
+                        <li>-> librairy VARCHAR(30));</li>
+                    </ul>
+                    <p>Exercice 5:</p>
+                    <ul>
+                        <li>-> CREATE TABLE [IF NOT EXISTS] ide (</li>
+                        <li>-> id INT AUTO_INCREMENT [PRIMARY KEY],</li>
+                        <li>-> ideName VARCHAR(30));</li>
+                    </ul>
+                    <p>Exercice 6:</p>
+                    <ul>
+                        <li>-> CREATE TABLE [IF NOT EXISTS] frameworks (</li>
+                        <li>-> id INT AUTO_INCREMENT [PRIMARY KEY],</li>
+                        <li>-> name VARCHAR(30));</li>
+                    </ul>
+                    <p>Exercice 7: DROP TABLE IF EXISTS tools;</p>
+                    <p>Exercice 8: DROP TABLE librairies;</p>
+                    <p>Exercice 9: DROP TABLE ide;</p>
+                    <p>TP:</p> 
+                    <ul>
+                        <li>CREATE DATABASES codex;</li>
+                        <li>USE codex;</li>
+                        <li>CREATE TABLE clients</li>
+                        <li>(</li>
+                        <li>id INT AUTO_INCREMENT PRIMARY KEY,</li>
+                        <li>lastName VARCHAR(100),</li>
+                        <li>firstName VARCHAR(100),</li>
+                        <li>birthDate DATE,</li>
+                        <li>adress VARCHAR(255),</li>
+                        <li>firstPhoneNumber INT(10),</li>
+                        <li>secondPhoneNumber INT(10),</li>
+                        <li>mail VARCHAR(255)</li>
+                        <li>);</li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+            </footer>
+    </body>
+</html>
